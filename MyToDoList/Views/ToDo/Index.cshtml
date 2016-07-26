@@ -1,0 +1,20 @@
+﻿@using MyToDoList.Models
+
+@{
+    ViewBag.Title = "To Do List";
+}
+
+<div id="todo-list-manager">
+    <h2>My To Do List</h2>
+    <div id="todo-controls" class="well">
+        <div id="create-new-todo-item">
+            @Html.Partial("~/views/todo/newtodoitem.cshtml", new ToDoItem())
+        </div><br/>
+        <div id="clear-all-todo-items">
+            @Html.Partial("~/views/todo/cleartodolist.cshtml")
+        </div>
+    </div>
+    <div id="todo-list" class="well">
+        @Html.Partial("~/views/todo/todolist.cshtml")
+    </div>
+</div>

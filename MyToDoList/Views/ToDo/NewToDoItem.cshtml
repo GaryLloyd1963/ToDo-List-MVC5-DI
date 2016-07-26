@@ -1,0 +1,15 @@
+﻿@model MyToDoList.Models.ToDoItem
+
+
+@using (Html.BeginForm("AddNewToDoItem", "ToDo", FormMethod.Get))
+{
+    <span id="todo-list-add-item">
+        <span id="submit-new-todo-item">
+            <input type="submit" class="btn btn-success" value="Add New Item">
+        </span>
+        <span id="input-to-do-item">
+            <input type="text" name="newToDoItem" autofocus/>
+        </span>
+    </span>
+}
+

@@ -1,0 +1,13 @@
+﻿@model List<MyToDoList.Models.ToDoItem>
+
+<strong>Current To Do List</strong>
+@{ int index = 0;}
+@foreach (var toDoItem in Model)
+{
+    <div class="row">
+        <div class="col-md-3">@toDoItem.Description</div>
+        <input type="button" class="col-md-1 btn btn-primary btn-xs remove-button" value="Remove"
+               onclick="location.href = '@Url.Action("ClearToDoItem", "ToDo", new {id = index})'">
+    </div>
+    index++;
+}
