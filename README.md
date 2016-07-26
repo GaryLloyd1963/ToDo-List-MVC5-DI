@@ -4,7 +4,7 @@
 
 This is a simple "To Do List" app using MVC5. The front end uses Bootstrap styling, while the backend uses MVC, StructureMap for DI, and a simple file storage for the "to do" data.
 
-![alt text](ScreenShot.png "To Do List Screen Shot")
+![alt text](ScreenShot.PNG "To Do List Screen Shot")
 
 The use of StructureMap allows DI into the controller code, so given greater support to TDD and producing much cleaner code. Do to this the Nuget package `StructureMap.MVC5` has been installed. A default container is initialised as part of the start up routines.
 
